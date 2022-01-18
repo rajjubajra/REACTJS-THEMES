@@ -3,10 +3,14 @@ import Footer from './Footer';
 
 function Layout({children}) {
   return (
-    <div className="w-full h-screen bg-slate-400">
+    <div className="w-full h-screen bg-slate-400 static">
       <Header />
       {children}
-      <Footer />
+
+      <div className="absolute bottom-1 text-center w-full">
+        <Footer />
+      </div>
+      
     </div>
   )
 }
