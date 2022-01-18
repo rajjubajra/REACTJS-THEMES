@@ -1,10 +1,19 @@
-
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="w-full h-screen bg-slate-400">
+    <BrowserRouter>
+    <Layout>
+          
       <div>Profile Website test</div>
-    </div>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
+    
+    </Layout>
+    </BrowserRouter>
   );
 }
 
