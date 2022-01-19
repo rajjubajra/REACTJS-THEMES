@@ -10,7 +10,7 @@ function Home() {
   
   return (
     <div className={`z-10`} >
-      <img src={pottery} alt="pottery" className="z-0 fixed top-0" />
+      <img src={pottery} alt="pottery" className="z-0 fixed top-0 w-full" />
       <div className={`arrow-wrapper`}>
         <div className="left-right-nav-arrow left-4">
           <Link to='/contact'>Get in touch</Link>
