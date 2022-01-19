@@ -4,10 +4,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // backgroundImage: {
-      //   'bg-home': "url('/images/pottery.jpg')",
-      //   'bg-about': "url('/images/pottery.jpg')",
-      // }
+      
     },
   },
   plugins: [],

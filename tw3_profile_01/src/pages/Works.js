@@ -1,16 +1,32 @@
+import {useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import WorkImage from '../images/work.jpg'
+import WorkImage from '../images/work.jpg';
+import ArrowLeft from '../components/ArrowLeft';
+import ArrowRight from '../components/ArrowRight';
+import gsap from 'gsap';
 
 function Works() {
+
+  useEffect(()=>{ 
+    gsap.from('.heroImage',{duration: 1.5, opacity: '0', ease: 'power2.in'})
+
+    gsap.from('.pagetitle',{ duration: 1.0, y: '50%', opacity:'0', delay: 1 })
+    
+  },[]);
+
   return (
       <div className="static">
-      <img src={WorkImage} alt="pottery" className="z-0 fixed top-0 grayscale" />
+      <img src={WorkImage} alt="pottery" className="heroImage" />
         <div className="arrow-wrapper">
             <div className="left-right-nav-arrow left-4">
-              <Link to='/about'>About</Link>
+              <Link to='/about' className="flex">
+              <ArrowLeft /> About
+              </Link>
             </div>
             <div className="left-right-nav-arrow right-4">
-              <Link to="/contact">Get in touch</Link>
+              <Link to="/contact" className="flex">
+              Get in touch <ArrowRight />
+              </Link>
             </div>
           <div className="pagetitle">
           <h1>Works...</h1>

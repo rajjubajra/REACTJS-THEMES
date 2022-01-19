@@ -1,17 +1,33 @@
+import {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import ClayFigures from '../images/clay-figures.jpg';
+import ArrowLeft from '../components/ArrowLeft';
+import ArrowRight from '../components/ArrowRight';
+import gsap from 'gsap';
 
 function Contact() {
+
+  useEffect(()=>{ 
+    gsap.from('.heroImage',{duration: 1.5, opacity: '0', ease: 'power2.in'})
+
+    gsap.from('.pagetitle',{ duration: 1.0, y: '50%', opacity:'0', delay: 1 })
+    
+  },[]);
+
   return (
       <div className="static">
 
-      <img src={ClayFigures} alt="pottery" className="z-0 fixed top-0 grayscale" />
+      <img src={ClayFigures} alt="pottery" className="heroImage" />
         <div className="arrow-wrapper">
             <div className="left-right-nav-arrow left-4">
-              <Link to='/works'>Works</Link>
+              <Link to='/works'  className="flex">
+              <ArrowLeft /> Works
+              </Link>
             </div>
             <div className="left-right-nav-arrow right-4">
-              <Link to="/">Home</Link>
+              <Link to="/" className="flex">
+              Home <ArrowRight />
+              </Link>
             </div>
             <div className="pagetitle">
               <h1>Contact...</h1>

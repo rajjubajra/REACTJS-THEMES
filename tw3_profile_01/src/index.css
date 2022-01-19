@@ -9,19 +9,23 @@
       @apply text-6xl tracking-wide font-light py-4
     }
 
-    .pagetitle{
-      @apply absolute top-1/3 flex w-full justify-center
+    .heroImage{
+      @apply z-0 fixed top-0 w-full h-screen object-cover grayscale
     }
+
+    .pagetitle{
+      @apply absolute top-1/3 flex w-full justify-center text-red-700    }
     
 
     .left-right-nav-arrow{
-        @apply fixed top-1/2 z-50 text-3xl font-thin
+        @apply md:fixed md:top-1/2 md:z-50 md:text-3xl md:font-thin md:block hidden 
+
     }
     .arrow-wrapper{
       @apply w-full h-screen text-3xl font-thin
     }
 
     .text-wrapper{
-      @apply pt-10 absolute z-40 px-60 py-20 w-full min-h-screen bg-white/80
+      @apply md:pt-10 absolute z-40 md:px-60 px-10 py-20 w-full min-h-screen bg-white/80
     }
 }
