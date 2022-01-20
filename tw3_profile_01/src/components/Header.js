@@ -1,27 +1,48 @@
 import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'; 
 import gsap from 'gsap';
-import data from '../data/nav.json';
+import {useDispatch, useSelector} from 'react-redux';
+import {actionNav} from '../redux/actions';
 
 
 function Header() {
 
-  console.log(data);
 
+  const dispatch = useDispatch();
+  const state = useSelector(state => state.reducerNav.nav_data);
+  const length = useSelector(state => state.reducerNav.nav_data_length);
+
+  console.log(state, "length", length);
+
+  /** fetch menu data */
+  useEffect(()=>{
+    dispatch(actionNav());
+  },[dispatch])
+
+
+  /** animations */
   useEffect(()=>{
 
-    gsap.from('.header',{duration: 1, y: '-100%'}); 
+    length > 0 && gsap.from('.header',{duration: 1, y: '-100%'}); 
 
-    gsap.from('.link', {duration: 1, opacity: 0, delay: 1, stagger: 0.5});
+    length > 0 && gsap.from('.link', {duration: 1, opacity: 0, delay: 1, stagger: 0.5});
 
-  },[])
+  },[length])
+
+
+  const baseurl = 'https://yellow-website.com/reactjs-themes/tw3-profile-01/'
 
   return (
     <div className="header bg-white/30 py-4 flex font-light justify-center tracking-wide uppercase text-gray-700">
-      <Link className="link mx-2" to="/">Home</Link>
-      <Link className="link mx-2" to="/about">About</Link>
-      <Link className="link mx-2" to="/works">Works</Link>
-      <Link className="link mx-2" to="/contact">Get in touch</Link>
+    {
+      length > 0 && state.map((item,index)=>{
+        return <Link 
+        key={index} 
+        className="link mx-2" 
+        to={item.url}>
+        {item.name}</Link>
+      })
+    }
     </div>
   )
 }

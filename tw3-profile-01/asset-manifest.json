@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/reactjs-themes/tw3-profile-01/static/css/main.4853094a.css",
-    "main.js": "/reactjs-themes/tw3-profile-01/static/js/main.e09775e6.js",
+    "main.css": "/reactjs-themes/tw3-profile-01/static/css/main.70965cec.css",
+    "main.js": "/reactjs-themes/tw3-profile-01/static/js/main.5294f8ae.js",
     "static/js/787.15f01b14.chunk.js": "/reactjs-themes/tw3-profile-01/static/js/787.15f01b14.chunk.js",
     "static/media/korea.jpg": "/reactjs-themes/tw3-profile-01/static/media/korea.69b7a62163d26f7911fd.jpg",
     "static/media/work.jpg": "/reactjs-themes/tw3-profile-01/static/media/work.1e840ac830380609a7be.jpg",
     "static/media/clay-figures.jpg": "/reactjs-themes/tw3-profile-01/static/media/clay-figures.cf559795d75cc9c5bf6d.jpg",
     "static/media/pottery.jpg": "/reactjs-themes/tw3-profile-01/static/media/pottery.81803dedfc47281891ec.jpg",
     "index.html": "/reactjs-themes/tw3-profile-01/index.html",
-    "main.4853094a.css.map": "/reactjs-themes/tw3-profile-01/static/css/main.4853094a.css.map",
-    "main.e09775e6.js.map": "/reactjs-themes/tw3-profile-01/static/js/main.e09775e6.js.map",
+    "main.70965cec.css.map": "/reactjs-themes/tw3-profile-01/static/css/main.70965cec.css.map",
+    "main.5294f8ae.js.map": "/reactjs-themes/tw3-profile-01/static/js/main.5294f8ae.js.map",
     "787.15f01b14.chunk.js.map": "/reactjs-themes/tw3-profile-01/static/js/787.15f01b14.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4853094a.css",
-    "static/js/main.e09775e6.js"
+    "static/css/main.70965cec.css",
+    "static/js/main.5294f8ae.js"
   ]
 }

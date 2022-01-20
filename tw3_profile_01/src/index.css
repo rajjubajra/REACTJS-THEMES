@@ -14,7 +14,7 @@
     }
 
     .pagetitle{
-      @apply absolute top-1/3 flex w-full justify-center text-red-700    }
+      @apply absolute top-1/4 flex w-full justify-center text-red-700    }
     
 
     .left-right-nav-arrow{
@@ -26,6 +26,6 @@
     }
 
     .text-wrapper{
-      @apply md:pt-10 absolute z-40 md:px-60 px-10 py-20 w-full min-h-screen bg-white/80
+      @apply md:pt-10 z-40 relative md:px-60 px-10 py-20 w-full min-h-screen bg-white/80
     }
 }

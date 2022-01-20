@@ -6,17 +6,18 @@ function Layout({children}) {
 
 
   return (
-    <div className="w-full bg-slate-400 static z-50">
-      <div className="z-50 absolute top-0 w-full">
+    <>
+      <div className="z-50 w-full relative">
         <Header />
       </div>
     
-      {children}
+          {children}
 
-      <div className="mb-bottom-1 text-center w-full">
-        <Footer />
-      </div>
-    </div>
+      
+      <div className="w-full relative">
+          <Footer />
+      </div> 
+    </>
   )
 }
 

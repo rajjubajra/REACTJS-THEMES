@@ -11,13 +11,13 @@
   },
   {
     "id": 3,
-    "name": "Work",
-    "url": "/about"
+    "name": "Works",
+    "url": "/works"
   },
   {
     "id": 4,
     "name": "Get in touch",
-    "url": "/about"
+    "url": "/contact"
   }
 
 ]

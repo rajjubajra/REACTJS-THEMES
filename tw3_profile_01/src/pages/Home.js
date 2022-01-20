@@ -13,10 +13,11 @@ import gsap from 'gsap';
 function Home() {
 
   useEffect(()=>{ 
+
+
     gsap.from('.heroImage',{duration: 1.5, opacity: '0', ease: 'power2.in'})
 
     gsap.from('.pagetitle',{ duration: 1.0, y: '50%', opacity:'0', delay: 1 })
-
 
   },[]);
 
@@ -25,15 +26,16 @@ function Home() {
 
   
   return (
-    <div className={ `z-10`} >
+    <div className={ `z-10 relative`} >
+      
   
 
-      <div >
+      <div>
         <div className="img-container">
           <img src={pottery} alt="pottery" 
           className="heroImage" />
         </div>
-      </div>
+      </div> 
 
 
       <div className={`arrow-wrapper`} >
@@ -53,7 +55,7 @@ function Home() {
         <div className="pagetitle">
           <h1>Welcome...</h1>
         </div>
-      </div>
+      </div> 
 
       <div className="text-wrapper">
         <h1>Welcome</h1>
