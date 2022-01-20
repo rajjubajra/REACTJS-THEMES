@@ -30,7 +30,7 @@ function Header() {
   },[length])
 
 
-  const baseurl = 'https://yellow-website.com/reactjs-themes/tw3-profile-01/'
+  
 
   return (
     <div className="header bg-white/30 py-4 flex font-light justify-center tracking-wide uppercase text-gray-700">
